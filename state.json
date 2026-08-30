@@ -1,0 +1,20 @@
+{
+  "last_updated": "2026-08-29",
+  "active_projects": [
+    {"id": "naga-hosting", "name": "NagaVision Hosting", "status": "live", "tier": "infra", "url": "hosting.nagavision.uk"},
+    {"id": "tgbss", "name": "Great British Sports Show", "status": "active", "tier": "flagship", "tags": ["sports-tech", "baghdatis", "kia"]},
+    {"id": "project-solander", "name": "Project Solander", "status": "in-development", "tier": "ip", "stack": "three.js"},
+    {"id": "journey-into-x", "name": "Journey into X", "status": "in-development", "tier": "ip", "stack": "three.js"},
+    {"id": "ellipsis-os", "name": "Ellipsis OS", "status": "in-development", "tier": "product"},
+    {"id": "naga-local", "name": "Naga Local AI", "status": "active", "tier": "infra", "stack": "ollama,qwen,flux"}
+  ],
+  "open_questions": [
+    "WHM/cPanel API token — live or re-issue?",
+    "GitHub PAT scope — admin needed for ops repo?",
+    "Live deployment targets beyond hosting.nagavision.uk — full map?",
+    "Active vs parked projects for this sprint — 2-3 focus only?",
+    "Workflow exceptions: hotfixes/cache-bust direct deploy OK?"
+  ],
+  "pending_decisions": [],
+  "deadlines": []
+}
