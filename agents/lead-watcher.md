@@ -45,7 +45,17 @@ Monitor Reddit + LinkedIn + funding-adjacent communities for two things:
 
 ## Filter profile (NagaVision fit)
 
-**High-fit client leads:**
+### 🔥 Tier 1 — Premium leads (act within hours, highest close rate)
+**Direct-fit, high-value, pay above standard rates:**
+- **Business schools** — MBA programs, exec ed, entrepreneurship faculty looking for guest speakers, case studies, curriculum partners, student venture support
+- **Angel investors & syndicates** — UK/Europe angels who back founders, often want strategic help for their portfolio (Reality Sprint / Retainer fit)
+- **Recently funded founders** — anyone announcing seed/Series A on LinkedIn, TechCrunch, Hacker News = 30-day window where they're buying services at premium rates
+- **Founder collectives / co-working spaces** — Second Home, Huckletree, The Conduit, Runway, Station F members
+- **VC portfolio ops teams** — Hiro Capital, LVP, Triple Point, Connect Ventures portfolio support (brand, web, hosting, AI tools)
+
+**Why priority:** These leads convert faster, pay 2-5x standard rates, and often become retainer clients. Curtis's Curtis+Jack strategic pairing + Reality Sprint positioning lands hardest here.
+
+### 🟢 Tier 2 — Standard client leads (act within 24h)
 - "Need AI automation for my brand" / "Need a website that converts"
 - "Looking for a creative director" / "Brand identity needed UK"
 - "Hosting for my SaaS, recommendations?" / "Want managed hosting with email"
@@ -54,18 +64,20 @@ Monitor Reddit + LinkedIn + funding-adjacent communities for two things:
 - "Indie game needs art/trailer/marketing"
 - "Music artist needs EPK, content, rollout"
 
-**High-fit funding leads:**
+### 💰 Funding leads (cross-reference Funding Watcher)
 - UK Games Fund / Creative UK open windows surfaced via community discussion
 - Antler / EF cohort announcements
 - Sector VC partner moves (people changing jobs = warm intros)
 - Founder equity crowdfunding rounds closing soon
 - Niche grants mentioned in r/grants or r/ukstartups
+- **Newly funded companies** = both funding lead AND future client lead (capture both)
 
-**Reject (no-go):**
+### ❌ Reject (no-go)
 - Crypto, pure fintech, B2B SaaS only, generic "virtual assistant" gigs
 - Anything requiring >50% match funding without runway
 - Indian/Pakistani freelance mills posting commission work
 - "Build me an app for $100" low-ball
+- Anything that doesn't fit the £2.5k+ floor
 
 ## Outputs
 
