@@ -1,7 +1,7 @@
 # Lead & Funding Watch Agent
 
 **Type:** permanent cron
-**Schedule:** daily 10:00 BST
+**Schedule:** daily 10:00 BST digest + real-time Telegram alerts for Tier 1 / fresh Reddit / DMs
 **Skills loaded:** `web_search`, `web_extract`, `read_file`, `write_file`, `terminal`, `gig-hunter`
 **Model:** main session model
 
@@ -116,6 +116,43 @@ Write to `/Users/nagavision/nagavision-operations/digests/lead-watcher/YYYY-MM-D
 - Use `continuity: true` semantics — read yesterday's digest, dedupe by post ID / LinkedIn URL.
 - Don't surface the same lead twice. If it dropped off the front page, archive it.
 - If a lead is converting (Curtis replied / pitched), move it to "in pipeline" and stop showing.
+
+# Real-time Telegram alerts (time-sensitive / fresh)
+
+**Trigger immediately (don't wait for the 10:00 BST digest) when ANY of these match:**
+
+1. **Tier 1 lead detected** — business school, angel, recently funded founder, founder collective, VC portfolio ops (any source, any platform)
+2. **Fresh Reddit post** — posted within last 60 minutes AND matches NagaVision fit (Tier 1 or Tier 2)
+3. **High-engagement mention** — someone with 5k+ followers tags NagaVision, Cro, or @curtsoul on any platform
+4. **Direct DM from a Tier 1 profile** — anywhere
+
+**Telegram alert format (one message per lead, keep it tight):**
+
+For Tier 1:
+```
+🔥 TIER 1 LEAD — {platform} @{handle}
+{1-line pain/context}
+Why premium: {recently funded / angel / VC portfolio / etc.}
+Suggested opener: "{first line of pitch, ≤200 chars}"
+Full draft: github.com/nagavisionltd/operations/blob/main/leads/drafts/{handle}-{YYYYMMDD}.md
+Link: {original post URL}
+```
+
+For fresh Reddit (Tier 2):
+```
+⚡ FRESH — r/{sub} • {minutes}m ago
+Title: {post title}
+Pain: {1-line}
+Fit: {service match}
+Suggested reply: "{first line, Reddit-appropriate}"
+Full draft: {github path}
+Link: {reddit permalink}
+```
+
+**Cadence & rate limits:**
+- Tier 1 + DM: fire immediately
+- Fresh Reddit: immediate if <60min, batch every 15min if multiple
+- Max 10 real-time alerts per hour (consolidate overflow into next digest)
 
 ## Guardrails
 
